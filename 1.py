@@ -11,3 +11,22 @@ class Car:
         self.__color = color
         self.year = year
         self.__price = price
+
+volvo = Car('Volvo', 'x60', 'yellow',  1845, 2000)
+honda = Car('Honda', 'CRV', 'red',  1950, 1050)
+car3 = Car("Toyota", "Camry", "green", 2000, 30000,)
+
+
+class Javatpoint:
+    def __init__(self):
+        self.emp = "None"
+    def getEmp(self):
+        return self.emp
+    def setEmp(self, emp):
+        self.emp = emp
+Mark = Javatpoint()
+John = Javatpoint()
+Mark.setEmp("Developer")
+John.setEmp("Designer")
+print(John.emp)
+print(Mark.emp)
