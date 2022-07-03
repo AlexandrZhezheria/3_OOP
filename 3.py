@@ -3,26 +3,32 @@
 Ознакомьтесь с декоратором property в Python. Создайте класс, описывающий температуру и позволяющий задавать и получать
 температуру по шкале Цельсия и Фаренгейта, причём данные могут быть заданы в одной шкале, а получены в другой.
 """
+class Term:
+    def __int__(self, cels, faring):
+        self.cels = cels
+        self.faring = faring
 
-def convert(x):
 
-    tf = (9/5)*x+32
+        def convert(c):
 
-    return tf
+            tf = (9/5)*c+32
 
-while True:
+            return tf
 
-    tc = input('t v celciax: ')
-    if tc == '':
+        while True:
 
-        break
+            tc = input('t v celciax: ')
+            if tc == '':
 
-    else:
-     tc = int(tc)
+                break
 
-    tf = convert(tc)
+            else:
 
-    print('t в цельсиях', tc, 'т в фаренгейтах', tf)
+            tc = int(tc)
+
+            tf = convert(tc)
+
+         print('t в цельсиях', tc, 'т в фаренгейтах', tf)
 
 
 
