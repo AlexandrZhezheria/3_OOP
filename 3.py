@@ -39,7 +39,7 @@ class Temperature:
 
 
     def __repr__(self):
-        return "Temperature <{}>".format(self.__c)
+        return "Temperature <{}>".format(self.__)
 
 
     def __с_to_f(c):
