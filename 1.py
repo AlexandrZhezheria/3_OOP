@@ -13,9 +13,8 @@ class Car:
         self.year = year
         self.__price = price
 
-    def __init__(self) -> None:
-        pass
+    
 
-volvo = Car('Volvo', 'x60', 'yellow',  1845, 2000)
-honda = Car('Honda', 'CRV', 'red',  1950, 1050)
-car3 = Car("Toyota", "Camry", "green", 2000, 30000,)
+Volvo = Car('Volvo', 'x60', 'yellow',  1845, 2000)
+Honda = Car('Honda', 'CRV', 'red',  1950, 1050)
+Toyota = Car("Toyota", "Camry", "green", 2000, 30000,)
