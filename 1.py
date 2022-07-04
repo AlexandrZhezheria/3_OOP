@@ -7,11 +7,11 @@
 class Car:
 
     def __int__(self, company, model, color, year, price):
-        self.company = company
-        self.model = model
-        self.__color = color
+        self.__company = company
+        self.__model = model
+        self.color = color
         self.year = year
-        self.__price = price
+        self.price = price
 
     
 
