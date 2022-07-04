@@ -13,8 +13,10 @@ class Car:
         self.year = year
         self.price = price
 
-    
-
 Volvo = Car('Volvo', 'x60', 'yellow',  1845, 2000)
 Honda = Car('Honda', 'CRV', 'red',  1950, 1050)
 Toyota = Car("Toyota", "Camry", "green", 2000, 30000,)
+
+        @property:
+
+
