@@ -33,30 +33,24 @@
 class Temperature:
     def __init__(self, value, system):
         if system == 'f':
-            self.__f = self.__f_to_c(int(value))
+            __f = self.f_to_c(value)
         elif system == 'c':
-            self.__c = self.__c_to_f(int(value))
+            __c = self.c_to_f(value)
 
-
-    def __repr__(self):
-        return "Temperature <{}>".format(self.__c)
-
-
-    def __с_to_f(c):
+    def с_to_f(self):
         """Перевод из цельсия в фаренгейт"""
-        return (9/5) * c + 32
+        return (9/5) * self.__c + 32
 
-
-    def __f_to_c(f):
+    def f_to_c(self):
         """Перевод из фаренгейт в цельсий"""
-        return 5.0*(f - 32) / 9
+        return 5.0*(self.__f - 32) / 9
 
 
 
 if __name__ == "__main__":
-    t = Temperature(0, 'f')
-    t.get_value()
-    print(repr(t))
+
+    t = Temperature(5, 'f')
+
 
 
 
