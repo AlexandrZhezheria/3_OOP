@@ -20,3 +20,7 @@ Toyota = Car("Toyota", "Camry", "green", 2000, 30000,)
 @property:
 
 
+@setter:
+
+
+
