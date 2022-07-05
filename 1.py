@@ -5,7 +5,7 @@
 
 
 class Car:
-    def __int__(self, color, brand, model, v, type_of_car):
+    def __init__(self, color, brand, model, v, type_of_car):
         self.color_of_the_car = color
         self.brand = brand
         self.model = model
