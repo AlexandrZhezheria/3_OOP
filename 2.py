@@ -10,15 +10,14 @@ class English:
         print("Hello")
 
 
-class French:
+class Español:
     def greeting(self):
-        print("Bonjour")
+        print("Hola")
 
-def intro(language):
+def hello_friend(language):
   language.greeting()
 
 john = English()
-gerard = French()
-intro(john) # Hello
-intro(gerard) # Bonjour
-
+gerard = Español()
+hello_friend(john)
+hello_friend(gerard)
