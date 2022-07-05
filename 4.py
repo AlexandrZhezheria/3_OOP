@@ -3,11 +3,22 @@
 на консоль фразы соответственно "Hello from Base" и "Hello from Child".
 """
 
-class Base1:
-    pass
 
-class Base2:
-    pass
+class Base():
+    def __init__(self):
+        print('Hello from Base')
 
-class Child(Base1, Base2):
+    def method(self):
+        print('Hello from Child')
 
+
+class Child(Base):
+    def __init__(self):
+        Base.__init__(self)
+
+    def method(self):
+        super(Child, self).method()
+
+
+child = Child()
+child.method()
