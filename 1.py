@@ -6,21 +6,21 @@
 
 class Car:
     def __init__(self, color, brand, model, v, type_of_car):
-        self.color_of_the_car = color
+        self.color = color
         self.brand = brand
         self.model = model
         self.__v = v
         self.__type_of_car = type_of_car
 
     def get(self):
-        return self.color_of_the_car
+        return self.__v
 
-    def set(self, new_color):
-        self.color_of_the_car = new_color
+    def set(self, new_v):
+        self.__v = new_v
 
 
 car1 = Car("blue", "Mercedese", "S-Class", "V8", "Universal")
 
 print(car1.get())
-car1.set("green")
+car1.set("V9")
 print(car1.get())
