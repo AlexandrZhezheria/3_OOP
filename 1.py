@@ -5,21 +5,22 @@
 
 
 class Car:
-
-    def __int__(self, company, model, color, price):
-        self.__company = company
-        self.__model = model
+    def __int__(self, color, brand, model, v, tupe_of_car):
         self.color = color
-        self.price = price
+        self.brand = brand
+        self.model = model
+        self.__v = v
+        self.__tupe_of_car = tupe_of_car
 
     def get(self):
-        return self.__model
+        return self.color_of_the_car
 
-    def set (self, new_model):
-        return self.__model = new_model
+    def set (self, new_color):
+        self.color_of_the_car = new_color
 
 
-car1 = Car("Honda", "Civic", "red", 2000)
+car1 = Car("blue", "Mercedese", "S-Class", "V8",  "Universal")
 
-print(car1.__model)
-print(car1.__company)
+print(car1.get())
+car1.set("green")
+print(car1.get())
