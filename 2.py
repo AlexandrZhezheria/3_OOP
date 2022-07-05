@@ -4,10 +4,21 @@
 объектов в одной функции (функция hello_friend).
 """
 
+
 class English:
-    pass
+    def greeting(self):
+        print("Hello")
 
 
-class Spanish:
-    pass
+class French:
+    def greeting(self):
+        print("Bonjour")
+
+def intro(language):
+  language.greeting()
+
+john = English()
+gerard = French()
+intro(john) # Hello
+intro(gerard) # Bonjour
 
