@@ -16,9 +16,7 @@ class Car:
         print(self.color)
 
 
-honda = Car('Honda', 'CRV', 'red', 1050)
+car1 = Car("Honda", "Civic", "red", 2000)
 
-
-
-
-
+print(car1.color)
+print(car1.__company)
