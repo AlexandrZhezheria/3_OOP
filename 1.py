@@ -15,7 +15,7 @@ class Car:
     def get(self):
         return self.color_of_the_car
 
-    def set (self, new_color):
+    def set(self, new_color):
         self.color_of_the_car = new_color
 
 
