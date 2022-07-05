@@ -5,22 +5,20 @@
 
 
 class Car:
-
-    def __int__(self, company, model, color, year, price):
+    def __int__(self, company, model, color, price):
         self.__company = company
         self.__model = model
         self.color = color
-        self.year = year
         self.price = price
 
-Volvo = Car('Volvo', 'x60', 'yellow',  1845, 2000)
-Honda = Car('Honda', 'CRV', 'red',  1950, 1050)
-Toyota = Car("Toyota", "Camry", "green", 2000, 30000,)
-
-@property:
+        print(self.__model)
+        print(self.price)
+        print(self.color)
 
 
-@setter:
+honda = Car('Honda', 'CRV', 'red', 1050)
+
+
 
 
 
